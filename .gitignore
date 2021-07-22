@@ -1,0 +1,8 @@
+.idea/
+*.iml
+.DS_Store
+
+#Terraform
+.terraform/
+providers.tf
+kubeconfig_eks-devops-challenge
