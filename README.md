@@ -41,7 +41,7 @@ Default output format [None]: json
 ### Provisioning Steps:
 * Create Dynamodb lock table and Terraform S3 state store bucket. Run:
 ```sh
-./init_tf_setup.sh cba47ab8-e741-11eb-ba80-0242ac130008 e1fa885c-e741-11eb-ba80-0242ac130007
+./init_tf_setup.sh cba47ab8-e741-11eb-ba80-0242ac130009 e1fa885c-e741-11eb-ba80-0242ac130007
 ```
 > Note: In the unlikely event of already existing s3 bucket with that name, please use a different bucket name
 * Provision EKS cluster stack with Terraform. Run:
@@ -62,5 +62,5 @@ terraform state rm kubernetes_namespace.game_2048
 ```
 * Remove Dynamodb lock table and Terraform S3 state store bucket. Run
 ```sh
-./clean_up.sh cba47ab8-e741-11eb-ba80-0242ac130008 e1fa885c-e741-11eb-ba80-0242ac130007
+./clean_up.sh cba47ab8-e741-11eb-ba80-0242ac130009 e1fa885c-e741-11eb-ba80-0242ac130007
 ```
